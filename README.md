@@ -14,7 +14,8 @@ A real-time voting system where users can create a poll and other users can cast
 - Setup PostgreSQL and Redis (`docker compose up -d`);
 - Copy `.env.example` file (`cp .env.example .env`);
 - Run application (`npm run dev`);
-- Test it! (I personally recommend testing with [Hoppscotch](https://hoppscotch.io/)).
+- Run tests (`npm run test`);
+- Test it by yourself! (Chose any API Client you like to test the routes).
 
 ## HTTP
 
@@ -31,7 +32,8 @@ Create a new poll.
     "JavaScript",
     "Java",
     "PHP",
-    "C#"
+    "C#",
+    "Todas são boas, a questão é o programador!"
   ]
 }
 ```
@@ -109,11 +111,5 @@ Add a vote to specific poll.
 
 <br />
 <br />
-
-<p align="center">
-  <a href="https://discord.gg/rocketseat" target="_blank">
-    <img align="center" src="https://storage.googleapis.com/golden-wind/comunidade/rodape.svg" alt="banner"/>
-  </a>
-</p>
 
 <!--END_SECTION:footer-->
