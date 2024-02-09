@@ -48,10 +48,12 @@ export async function voteOnPoll(app: FastifyInstance) {
         });
       }
 
-     const voteInput = new VoteInput(sessionId, pollId, pollOptionId);
-     await CreateVoteService.handle(voteInput);
+    const voteInput = new VoteInput(sessionId, pollId, pollOptionId);
+    await CreateVoteService.handle(voteInput);
+    const increaseVoteCountInput = new ModifyVoteCountInput(pollId, 1, pollOptionId);
+    await ModifyVoteCountService.handle(increaseVoteCountInput);
 
-      const votes = await FindVotesByPollIdService.handle(pollId);
+    const votes = await FindVotesByPollIdService.handle(pollId);
 
       voting.publish(pollId, {
         pollOptionId,

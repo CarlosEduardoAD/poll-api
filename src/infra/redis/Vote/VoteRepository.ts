@@ -14,7 +14,7 @@ export class VoteRepositoryRedis implements IVoteRepository {
     }
 
     async modifyVoteCount(input: ModifyVoteCountInput): Promise<string> {
-        return await this.db.zincrby(input.pollId, input.vote,input.pollOptionId);
+        return await this.db.zincrby(input.pollId, input.vote, input.pollOptionId);
     }
 
     async findVotesByPollId(pollId: string): Promise<string[]> {
