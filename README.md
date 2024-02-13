@@ -109,7 +109,6 @@ Add a vote to specific poll.
 ```
 <!--START_SECTION:footer-->
 
-<br />
-<br />
+This project was made in colaboration with Rockeseat, most of the code is from them, I've just made some improvemnts and added some features, like Domain Driven Design and unit tests.
 
 <!--END_SECTION:footer-->
